@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --width: 500px;
+  --width-responsive: 80vw;
+  --font-responsive: 0.8em;
+  --secondary-color: rgb(77, 172, 226);
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(35, 35, 35);
+}
+
+main {
+  background-color: rgb(35, 35, 35);
+}
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  background-color: rgb(35, 35, 35);
+  color: var(--secondary-color);
+}
+h1 {
+  font-size: 1.5em;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.underline-text {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: rgb(122, 122, 122);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.main-nav-list a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.main-nav-list a:hover {
+  color: lightblue;
+}
+
+.main-welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(122, 122, 122);
+  border-bottom: 30px solid black;
+}
+
+.main-welcome-page-container h2 {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.main-welcome-page-container p {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.about-me,
+.portfolio,
+.experience {
+  color: rgb(122, 122, 122);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px 0 0 0;
+}
+
+.about-me-container {
+  padding: 50px 0;
+  border-radius: 10px;
+  width: var(--width);
+}
+
+.about-me h4,
+.about-me p {
+  font-size: 1.5em;
+}
+
+.list-skills {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-right: 40px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.portfolio-box {
+  width: 300px;
+  height: 500px;
+  border: 5px solid black;
+  box-shadow: 0px 0px 10px var(--secondary-color);
+  border-radius: 10px;
+}
+
+.experience-container {
+  font-size: 1.5em;
+  width: var(--width);
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 0;
+}
+
+h4 {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .experience-container {
+    width: var(--width-responsive);
+  }
+  .about-me-container {
+    width: var(--width-responsive);
+  }
+  body {
+    font-size: var(--font-responsive);
+  }
+  .main-nav-list {
+    padding: 20px;
+    gap: 5px;
+  }
+  .about-me,
+  .portfolio,
+  .experience {
+    height: fit-content;
+  }
+  #about-me,
+  #experience,
+  #portfolio {
+    scroll-margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-box {
+    width: var(--width-responsive);
+  }
+  .main-welcome-page-container h2 {
+    font-size: 3em;
+  }
+  .main-welcome-page-container p {
+    font-size: 1em;
+  }
+}
