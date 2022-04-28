@@ -43,8 +43,7 @@ h1 {
 }
 
 .underline-text {
-  text-decoration: underline;
-  text-decoration-color: var(--secondary-color);
+  text-decoration: underline var(--secondary-color);
 }
 
 .main-nav-list {
