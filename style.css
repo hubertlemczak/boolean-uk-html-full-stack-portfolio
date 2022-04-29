@@ -170,7 +170,7 @@ h1 {
 }
 
 .glow {
-  text-shadow: 0 0 15px var(--secondary-color);
+  text-shadow: 0 0 16px var(--secondary-color);
 }
 footer {
   position: sticky;
