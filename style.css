@@ -149,6 +149,10 @@ h1 {
   color: white;
 }
 
+.button:hover {
+  background-color: rgb(35, 35, 35);
+}
+
 .links {
   display: grid;
   gap: 10px;
@@ -167,6 +171,10 @@ h1 {
 .back-up a {
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+.back-up a:hover {
+  color: lightblue;
 }
 
 .glow {
