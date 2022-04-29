@@ -159,6 +159,15 @@ h1 {
   place-items: center center;
 }
 
+.github {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.github:hover {
+  color: lightblue;
+}
+
 .experience-container {
   font-size: 1.5em;
   width: var(--width);
