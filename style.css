@@ -235,7 +235,6 @@ h4 {
 
 @media only screen and (max-width: 600px) {
   .portfolio-box {
-    width: var(--width-responsive);
     height: fit-content;
     padding: 10px;
   }
@@ -244,5 +243,8 @@ h4 {
   }
   .main-welcome-page-container p {
     font-size: 1em;
+  }
+  body{
+    width: --width-responsive: 80vw;;
   }
 }
